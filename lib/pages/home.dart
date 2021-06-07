@@ -37,58 +37,105 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: 95,
+                  height: 100,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       SizedBox(
                         width: 24,
                       ),
-                      IconCard(
-                        ButtonIcon(
-                          id: 1,
-                          imageUrl: 'assets/btn-all.png',
+                      InkWell(
+                        onTap: () {},
+                        child: IconCard(
+                          ButtonIcon(
+                              id: 1,
+                              imageUrl: 'assets/btn-all.png',
+                              name: 'All'),
                         ),
                       ),
                       SizedBox(
                         width: 20,
                       ),
-                      IconCard(
-                        ButtonIcon(
-                          id: 2,
-                          imageUrl: 'assets/btn-my.png',
+                      InkWell(
+                        onTap: () {},
+                        child: IconCard(
+                          ButtonIcon(
+                              id: 2, imageUrl: 'assets/btn-my.png', name: 'My'),
                         ),
                       ),
                       SizedBox(
                         width: 20,
                       ),
-                      IconCard(
-                        ButtonIcon(
-                          id: 3,
-                          imageUrl: 'assets/btn-anex.png',
+                      InkWell(
+                        onTap: () {},
+                        child: IconCard(
+                          ButtonIcon(
+                              id: 3,
+                              imageUrl: 'assets/btn-anex.png',
+                              name: 'Sad'),
                         ),
                       ),
                       SizedBox(
                         width: 20,
                       ),
-                      IconCard(
-                        ButtonIcon(
-                          id: 5,
-                          imageUrl: 'assets/btn-sleep.png',
+                      InkWell(
+                        onTap: () {},
+                        child: IconCard(
+                          ButtonIcon(
+                              id: 5,
+                              imageUrl: 'assets/btn-sleep.png',
+                              name: 'Sleep'),
                         ),
                       ),
                       SizedBox(
-                        width: 24,
+                        width: 20,
                       ),
                     ],
                   ),
                 ),
-                Center(
-                  child: ClipRRect(
-                    child: Stack(
-                      children: [],
+                SizedBox(
+                  height: 30,
+                ),
+                Stack(
+                  children: <Widget>[
+                    Center(
+                      child: Container(
+                        width: 374,
+                        height: 233,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          image: DecorationImage(
+                            image: AssetImage(
+                              'assets/moon5.png',
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                    Container(
+                      alignment: Alignment.center,
+                      child: Column(
+                        children: <Widget>[
+                          Text(
+                            'The Ocean Moon',
+                            style: yellowTextStyle.copyWith(fontSize: 36),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Non-stop 8- hour mixes of our\n most popular sleep audio',
+                            style: whiteTextStyle.copyWith(
+                              fontSize: 16,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 22,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

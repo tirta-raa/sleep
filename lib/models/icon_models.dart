@@ -3,11 +3,11 @@ part of 'models.dart';
 class ButtonIcon {
   final int id;
   final String imageUrl;
-  final bool isIcon;
+  final String name;
 
   ButtonIcon({
     required this.id,
     required this.imageUrl,
-    this.isIcon = false,
+    required this.name,
   });
 }

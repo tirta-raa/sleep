@@ -8,7 +8,7 @@ class IconCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       child: Container(
-        height: 92,
+        height: 100,
         child: Column(
           children: <Widget>[
             Column(
@@ -20,6 +20,12 @@ class IconCard extends StatelessWidget {
                 ),
                 SizedBox(
                   height: 10,
+                ),
+                Text(
+                  icon.name,
+                  style: buttonTextStyle.copyWith(
+                    fontSize: 16,
+                  ),
                 )
               ],
             ),

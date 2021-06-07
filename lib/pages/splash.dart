@@ -39,9 +39,10 @@ class SpalsPage extends StatelessWidget {
                       width: 369,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage(
-                          'assets/bird.png',
-                        )),
+                          image: AssetImage(
+                            'assets/bird.png',
+                          ),
+                        ),
                       ),
                     ),
                   ],
