@@ -2,7 +2,7 @@ part of 'services.dart';
 
 Color themeColor = Color(0xff03174C);
 Color purpleColor = Color(0xff8E97FD);
-Color greyColor = Color(0xff586894);
+Color greyButtonColor = Color(0xff586894);
 Color greyLightColor = Color(0xff98A1BD);
 Color whiteColor = Color(0xffEBEAEC);
 Color whiteLightColor = Color(0xffEBEAEC);
